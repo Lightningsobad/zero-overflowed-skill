@@ -1,0 +1,8 @@
+.dart_tool/
+.flutter-plugins-dependencies
+.idea/
+build/
+__pycache__/
+examples/overflow_lab/.metadata
+examples/overflow_lab/android/
+examples/overflow_lab/ios/
