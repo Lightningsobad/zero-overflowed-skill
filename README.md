@@ -4,7 +4,7 @@ An Agent Skill for Flutter mobile layout. It helps coding agents build adaptive 
 
 ## Quickstart
 
-1. Clone `https://github.com/Lightningsobad/zero-overflowed-skill.git`. Use a release tag when available to keep the skill and examples on the same version.
+1. Clone the tagged alpha with `git clone --branch v0.1.0-alpha.1 https://github.com/Lightningsobad/zero-overflowed-skill.git`.
 2. Install the complete `skills/zero-overflowed/` folder into your Flutter project. Follow the guide for [Claude Code](docs/installation/claude-code.md), [Codex](docs/installation/codex.md), or [Antigravity](docs/installation/antigravity.md). Each guide covers project and user installation, invocation, updates, and removal.
 3. Tell the agent what your app supports and ask it to run a check. Use the [scope template and prompts](docs/usage.md).
 
@@ -26,6 +26,8 @@ The first run should pass. The second run should fail for the four intentional d
 ## How verification works
 
 The skill checks framework errors and user outcomes, including full text, visible actions, and intended scrolling. It reports `PASS`, `FAIL`, or `NOT VERIFIED` per case. Define the app's supported viewport, text settings, locales, and device-dependent flows before using the results as release evidence.
+
+This alpha includes project-level installation verified with Codex CLI, host-side Flutter tests, and a checkout smoke test on an Android emulator. See the matrix for individual surfaces and unverified cases.
 
 - [Compatibility and verification status](docs/support-matrix.md)
 - [Agent evaluation protocol](docs/evaluation.md)
